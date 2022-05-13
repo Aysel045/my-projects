@@ -9,7 +9,7 @@ app = Flask(__name__)
 # to the 'user' variable and sent that user name into the html file. If it doesn't have any parameter, warning massage is raised
 @app.route('/')
 def home():
-    return render_template('main.html', name='Vincenzo')
+    return render_template('main.html', name='Volkan')
 
 # Write a function named `greet` which uses template file named `greet.html` given under `templates` folder
 @app.route('/greet', methods=['GET'])
@@ -40,5 +40,5 @@ def login():
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__ == '__main__':
-    # app.run(debug=True)
-    app.run(host='0.0.0.0', port=80)
+    app.run(debug=True)
+    # app.run(host='0.0.0.0', port=80)
